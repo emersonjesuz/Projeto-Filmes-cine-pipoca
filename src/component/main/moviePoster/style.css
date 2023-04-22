@@ -1,0 +1,117 @@
+.moviePosterBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 70vw;
+  height: 500px;
+  margin: 50px auto;
+
+  background-color: rgb(41, 39, 39);
+
+  border-radius: 10px;
+}
+
+.moviePosterImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 50%;
+  height: 100%;
+  padding-left: 30px;
+}
+
+.posterImage {
+  width: 100%;
+  min-height: 270px;
+
+  border-radius: 10px;
+  border: 5px solid pink;
+
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.moviePosterData {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  width: 50%;
+  height: 100%;
+
+  padding-left: 50px;
+}
+
+.moviePosterItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+
+  width: 90%;
+  min-height: 250px;
+
+  color: white;
+
+  animation: leaving 3s forwards;
+}
+
+.moviePosterTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto;
+  width: 70%;
+}
+
+.moviePosterOverview {
+  margin: 0 auto;
+}
+
+.moviePosterOverview span {
+  color: rgba(110, 110, 110, 0.5);
+}
+
+.voteAverageAndReleaseDate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.moviePosterDate,
+.moviePosterVote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  padding: 2px 5px;
+
+  background-color: rgba(114, 75, 75, 0.295);
+
+  border-radius: 5px;
+}
+
+.moviePosterDate img,
+.moviePosterVote img {
+  width: 20px;
+}
+
+.desable {
+  opacity: 0;
+}
+
+@keyframes leaving {
+  100% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0;
+  }
+}

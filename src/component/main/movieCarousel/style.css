@@ -1,0 +1,92 @@
+.carouselBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  width: 70vw;
+  height: 250px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 0 20px;
+
+  background-color: rgba(114, 75, 75, 0.295);
+
+  border-radius: 10px;
+}
+
+.btnLeft,
+.btnRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 80px;
+  height: 80px;
+  padding: 20px;
+
+  background-color: rgba(0, 0, 0, 0.103);
+
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.btnLeft:hover,
+.btnRight:hover {
+  opacity: 0.6;
+}
+
+.btnLeft img,
+.btnRight img {
+  transition: all 0.3s;
+}
+
+.btnLeft img:hover,
+.btnRight img:hover {
+  transform: scale(1.1);
+}
+
+.moviesBox {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  width: calc(100% - 160px);
+  height: 200px;
+
+  overflow: hidden;
+}
+
+.cardMovie {
+  width: calc(100% / 6);
+  height: 180px;
+
+  background-color: rgba(240, 248, 255, 0.212);
+
+  border-radius: 5px;
+
+  animation: leaving 3s forwards;
+
+  cursor: pointer;
+}
+
+.cardMovie:hover {
+  opacity: 0.5;
+}
+
+.cardMovie img {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 5px;
+}
+
+@keyframes leaving {
+  100% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0;
+  }
+}

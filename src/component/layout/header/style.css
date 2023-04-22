@@ -1,0 +1,50 @@
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  min-width: 100vw;
+  height: 100px;
+
+  background-color: rgb(7, 1, 6);
+}
+
+.boxHeaderLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  height: 100%;
+}
+
+.boxHeaderLogo h1 {
+  color: white;
+
+  text-transform: capitalize;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+
+  text-shadow: 0px 2px 10px rgb(230, 107, 235);
+}
+
+.boxHeaderLogo img {
+  width: 40px;
+}
+
+.boxHeaderInput input {
+  height: 30px;
+  width: 200px;
+  padding-left: 10px;
+
+  background-color: rgba(255, 192, 203, 0.795);
+
+  border: none;
+  border-radius: 5px;
+}
+
+.boxHeaderInput input::placeholder {
+  padding-left: 10px;
+
+  color: rgba(128, 128, 128, 0.589);
+}
